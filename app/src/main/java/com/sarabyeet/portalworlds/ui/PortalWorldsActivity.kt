@@ -13,6 +13,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.crashlytics.FirebaseCrashlytics
 import com.sarabyeet.portalworlds.R
 import com.sarabyeet.portalworlds.arch.SharedViewModel
 import com.squareup.picasso.Picasso
@@ -27,6 +28,10 @@ class PortalWorldsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_portal_worlds)
+
+        // Firebase crashlytics - setting an user id, useful in authentication case
+        FirebaseCrashlytics.getInstance().setUserId("1245")
+
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController

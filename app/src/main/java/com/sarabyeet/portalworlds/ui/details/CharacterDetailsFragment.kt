@@ -12,9 +12,10 @@ import androidx.navigation.fragment.navArgs
 import com.sarabyeet.portalworlds.NavGraphDirections
 import com.sarabyeet.portalworlds.arch.SharedViewModel
 import com.sarabyeet.portalworlds.databinding.FragmentCharacterDetailsBinding
+import com.sarabyeet.portalworlds.ui.BaseFragment
 
 
-class CharacterDetailsFragment : Fragment() {
+class CharacterDetailsFragment : BaseFragment() {
 
     private var _binding: FragmentCharacterDetailsBinding? = null
     private val binding get() = _binding!!

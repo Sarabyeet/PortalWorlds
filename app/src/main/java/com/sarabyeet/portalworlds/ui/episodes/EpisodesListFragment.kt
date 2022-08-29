@@ -12,10 +12,12 @@ import androidx.paging.PagingData
 import com.sarabyeet.portalworlds.NavGraphDirections
 import com.sarabyeet.portalworlds.arch.EpisodesViewModel
 import com.sarabyeet.portalworlds.databinding.FragmentEpisodesListBinding
+import com.sarabyeet.portalworlds.ui.BaseFragment
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import java.lang.RuntimeException
 
-class EpisodesListFragment : Fragment() {
+class EpisodesListFragment : BaseFragment() {
     private var _binding: FragmentEpisodesListBinding? = null
     private val binding get() = _binding!!
 
@@ -45,6 +47,9 @@ class EpisodesListFragment : Fragment() {
             }
         }
         binding.epoxyRecyclerView.setControllerAndBuildModels(controller)
+
+        // Causing a fatal crash
+        // throw RuntimeException("For Firebase")
     }
 
     override fun onDestroyView() {

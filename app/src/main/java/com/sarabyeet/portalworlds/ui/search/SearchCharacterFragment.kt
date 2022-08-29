@@ -14,11 +14,12 @@ import androidx.navigation.fragment.findNavController
 import com.sarabyeet.portalworlds.NavGraphDirections
 import com.sarabyeet.portalworlds.arch.SearchCharacterViewModel
 import com.sarabyeet.portalworlds.databinding.FragmentSearchCharacterBinding
+import com.sarabyeet.portalworlds.ui.BaseFragment
 import com.sarabyeet.portalworlds.util.Constants
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
-class SearchCharacterFragment : Fragment() {
+class SearchCharacterFragment : BaseFragment() {
 
     private var _binding: FragmentSearchCharacterBinding? = null
     private val binding get() = _binding!!
