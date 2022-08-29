@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/characters">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/charactersListFragment"
+                    android:icon="@drawable/ic_people_24"
+                    android:title="@string/all_characters" />
+                <item
+                    android:id="@+id/searchCharacterFragment"
+                    android:icon="@drawable/ic_person_search_24"
+                    android:title="@string/search_character" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/episodes">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/episodesListFragment"
+                    android:icon="@drawable/ic_round_movie_filter_24"
+                    android:title="@string/all_episodes" />
+            </group>
+        </menu>
+    </item>
+</menu>

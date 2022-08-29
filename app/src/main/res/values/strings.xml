@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Portal Worlds</string>
+    <string name="gender_label">Gender</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all_characters">All Characters</string>
+    <string name="all_episodes">All Episodes</string>
+    <string name="characters">Characters</string>
+    <string name="episodes">Episodes</string>
+    <string name="random_character">Random character :</string>
+    <string name="search_character">Search Character</string>
+    <string name="search_a_character">Search a character</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/charactersListFragment">
+
+    <action
+        android:id="@+id/action_global_to_episodeDetailsBottomSheetFragment"
+        app:destination="@id/episodeDetailsBottomSheetFragment"/>
+
+    <action
+        android:id="@+id/action_global_to_characterDetailsFragment"
+        app:destination="@id/characterDetailsFragment"
+        app:enterAnim="@anim/slide_in_from_right"
+        app:exitAnim="@anim/slide_out_to_left"
+        app:popEnterAnim="@anim/slide_in_from_left"
+        app:popExitAnim="@anim/slide_out_to_right" />
+
+    <fragment
+        android:id="@+id/charactersListFragment"
+        android:name="com.sarabyeet.portalworlds.ui.home.CharactersListFragment"
+        android:label="Rick and Morty characters"
+        tools:layout="@layout/fragment_characters_list">
+    </fragment>
+    <fragment
+        android:id="@+id/characterDetailsFragment"
+        android:name="com.sarabyeet.portalworlds.ui.details.CharacterDetailsFragment"
+        android:label="Character Details"
+        tools:layout="@layout/fragment_character_details">
+        <deepLink app:uri="https://portalworlds.com/character/{characterId}" />
+        <argument
+            android:name="characterId"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/episodesListFragment"
+        android:name="com.sarabyeet.portalworlds.ui.episodes.EpisodesListFragment"
+        android:label="EpisodesListFragment"
+        tools:layout="@layout/fragment_episodes_list"/>
+    <dialog
+        android:id="@+id/episodeDetailsBottomSheetFragment"
+        android:name="com.sarabyeet.portalworlds.ui.episodes.details.EpisodeDetailsBottomSheetFragment"
+        android:label="EpisodeDetailsBottomSheetFragment"
+        tools:layout="@layout/fragment_bottom_sheet_episode_details" >
+        <argument
+            android:name="episodeId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </dialog>
+    <fragment
+        android:id="@+id/searchCharacterFragment"
+        android:name="com.sarabyeet.portalworlds.ui.search.SearchCharacterFragment"
+        android:label="SearchCharacterFragment"
+        tools:layout="@layout/fragment_search_character"/>
+</navigation>

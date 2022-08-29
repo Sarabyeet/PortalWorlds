@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "910992997384",
+    "project_id": "portal-worlds-10359",
+    "storage_bucket": "portal-worlds-10359.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910992997384:android:2b6660ffaf80ed311a25bd",
+        "android_client_info": {
+          "package_name": "com.sarabyeet.portalworlds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910992997384-2cpchq9ughccj63etvjs9v4cbtitcna2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkmhWyWE_GnZqOeT-1BCECwjwdB4Bzd3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910992997384-2cpchq9ughccj63etvjs9v4cbtitcna2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
